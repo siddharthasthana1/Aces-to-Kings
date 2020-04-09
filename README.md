@@ -1,2 +1,3 @@
-#A2K readme
-Text based for now
+#This is a sample readme file
+Text based game for now
+
