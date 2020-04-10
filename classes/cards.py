@@ -8,7 +8,7 @@ class Card:
 class Deck:
     def __init__(self):
         self.crd_dck = []
-        for suitname in ['Hearts', 'Diamonds', 'Spades', 'Clubs']:
+        for suitname in ['Hearts', 'Diamonds', 'Spades', 'Clubs']: #build deck 52 cards
             for cardval in range(1,14):
                 self.crd_dck.append(Card(suitname,cardval))
 
