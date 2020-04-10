@@ -8,7 +8,7 @@ class Card:
 class Deck:
     def __init__(self):
         self.crd_dck = []
-        for suitname in ['Hearts', 'Diamonds', 'Spades', 'Clubs']: #build deck 52 cards
+        for suitname in ['\u2665', '\u2666', '\u2660', '\u2663']: #build deck 52 cards
             for cardval in range(1,14):
                 self.crd_dck.append(Card(suitname,cardval))
 
@@ -21,8 +21,8 @@ class Deck:
         return crd
 
     def show_deck(self):
-        for x in range(0,len(self.crd_dck)-1):
-            print(self.crd_dck[x].value, 'of', self.crd_dck[x].suit)
+        for x in range(0,len(self.crd_dck)):
+            print(str(self.crd_dck[x].value) + self.crd_dck[x].suit)
         print (len(self.crd_dck))
 
     def distribute_to_player(self, cardnum):
